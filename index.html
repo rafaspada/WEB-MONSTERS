@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Monsters</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/icon.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+    </script>
+    <script src="/data/audio.js" defer></script>
+    <script src="/data/battleZones.js" defer></script>
+    <script src="/data/collisions.js" defer></script>
+    <script src="/data/attacks.js" defer></script>
+    <script src="/data/mons.js" defer></script>
+    <script src="/js/classes.js" defer></script>
+    <script src="/js/index.js" defer></script>
+    <script src="/js/battleScene.js" defer></script>
+  </head>
+  <body>
+    <div class="centralize">
+      <div class="parent">
+        <div class="bg-battle" id="overlapping-div"></div>
+        <canvas></canvas>
+        <div id="user">
+          <div class="statusbar-enemy">
+            <h1 id="enemyName"></h1>
+            <div class="healthbar-enemy">
+              <div class="health-enemy"></div>
+              <div class="health1-enemy" id="enemyHealthBar"></div>
+            </div>
+          </div>
+          <div class="statusbar-player">
+            <h1 id="playerName"></h1>
+            <div class="healthbar-player">
+              <div class="health-player"></div>
+              <div class="health1-player" id="playerHealthBar"></div>
+            </div>
+          </div>
+          <div class="movement-container">
+            <div class="dialog-box" id="dialogBox"></div>
+            <div class="movements" id="movementsBox"></div>
+            <div class="movement-type">
+              <h1 id="attackType"></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
